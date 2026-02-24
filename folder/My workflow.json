@@ -1,0 +1,72 @@
+{
+  "active": false,
+  "activeVersion": null,
+  "activeVersionId": null,
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2026-02-24T12:41:34.574Z",
+  "id": "Mflizq1E98cuebs9",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "bc17c37e-07de-4983-9d6d-a78a5be8f975",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://newsdata.io/api/1/news?apikey=LA_TUA_API_KEY&q=crypto&language=en",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "902aab20-3531-43f7-8fb7-87e8d3a97d68",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "shared": [
+    {
+      "updatedAt": "2026-02-24T12:41:34.574Z",
+      "createdAt": "2026-02-24T12:41:34.574Z",
+      "role": "workflow:owner",
+      "workflowId": "Mflizq1E98cuebs9",
+      "projectId": "mk98uGl5LoZOyCxr"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-02-24T13:07:40.252Z",
+  "versionId": "cc6b670e-9b9a-4709-afd2-217a3eaea299"
+}
